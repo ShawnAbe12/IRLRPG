@@ -2,8 +2,14 @@ h3{
     font-size: 15px;
 }
 
-#UserDisplay{
-    text-shadow: 2px 1px 10px blue;
-    background-image: linear-gradient(to right, #6f9dfa , rgb(13, 198, 255));
+#LevelUp{
+    text-shadow: 1px 1px 5px blue;
+}
 
+.UIElement{
+    text-shadow: 2px 1px 10px blue;
+    /* background-image: linear-gradient(to right, #6f9dfa , rgb(13, 198, 255)); */
+}
+.Skills{
+    text-shadow:2px 1px 5px #5901fd;
 }

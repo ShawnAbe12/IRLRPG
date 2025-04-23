@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function levelUpAll(){
+            var Strength = parseInt(document.getElementById("Strength").innerHTML) + 1;
+            var Agility = parseInt(document.getElementById("Agility").innerHTML) + 1;
+            var Intelligence = parseInt(document.getElementById("Intelligence").innerHTML) + 1;
+            var Vitality = parseInt(document.getElementById("Vitality").innerHTML) + 1;
+            var Socialization = parseInt(document.getElementById("Socialization").innerHTML) + 1;
+
+            document.getElementById("Strength").innerHTML = Strength
+            document.getElementById("Agility").innerHTML = Agility
+            document.getElementById("Intelligence").innerHTML = Intelligence
+            document.getElementById("Vitality").innerHTML = Vitality
+            document.getElementById("Socialization").innerHTML = Socialization
+        }
+        
+    </script>
+
 
 </head>
 <body>
@@ -16,14 +33,26 @@
     <h3 id ="Title", class="UIElement">Title: Tall Guy</h3>
 
     <h3 class="UIElement">Skills</h3>
-
-    <ol class="Skills">Strength 0</ol><!--       Leveled up through working out at the gym or at home with weights -->
-    <ol class="Skills">Agility 0</ol><!--        Leveled up through going on a run/walk -->           
-    <ol class="Skills">Intelligence 0</ol><!--   Leveled up through using the pomodoro technique to study -->
-    <ol class="Skills">Vitality 0</ol><!--       Leveled up by eating healthy food-->
-    <ol class="Skills">Socialization 0</ol><!--  Leveled up by talking to someone outside of main friend group-->
     
-    <button>Level Up Stat</button>
+
+    <ol class="Skills">Strength:
+        <ol id ="Strength">0</ol>
+    </ol><!--       Leveled up through working out at the gym or at home with weights -->
+    <ol class="Skills">Agility: 
+        <ol id ="Agility">0</ol>
+    </ol><!--        Leveled up through going on a run/walk -->           
+    <ol class="Skills">Intelligence:
+        <ol id ="Intelligence">0</ol>
+    </ol><!--   Leveled up through using the pomodoro technique to study -->
+    <ol class="Skills">Vitality:
+        <ol id ="Vitality">0</ol>
+    </ol><!--       Leveled up by eating healthy food-->
+    <ol class="Skills">Socialization
+        <ol id ="Socialization">0</ol>
+    </ol><!--  Leveled up by talking to someone outside of main friend group-->
+    
+    <input id="LevelUp" type="button" value="Level Up Stat" onclick=levelUpAll(); />
+
 
 </body>
 </html>
