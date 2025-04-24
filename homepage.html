@@ -25,6 +25,7 @@
 
 </head>
 <body>
+
     <h1 id="UserDisplay", class="UIElement">User: Shawn Abraham</h1>
     <h4 id="EXPBar", class="UIElement">EXP Bar</h4>
 
@@ -36,10 +37,10 @@
     
 
     <ol class="Skills">Strength:
-        <ol id ="Strength">0</ol>
+        <ol id ="Strength", class="StatNum">0</ol>
     </ol><!--       Leveled up through working out at the gym or at home with weights -->
     <ol class="Skills">Agility: 
-        <ol id ="Agility">0</ol>
+        <ol id ="Agility", class="StatNum">0</ol>
     </ol><!--        Leveled up through going on a run/walk -->           
     <ol class="Skills">Intelligence:
         <ol id ="Intelligence">0</ol>
@@ -51,7 +52,7 @@
         <ol id ="Socialization">0</ol>
     </ol><!--  Leveled up by talking to someone outside of main friend group-->
     
-    <input id="LevelUp" type="button" value="Level Up Stat" onclick=levelUpAll(); />
+    <button id="LevelUp" onclick=levelUpAll();>Level Up</button>
 
 
 </body>
